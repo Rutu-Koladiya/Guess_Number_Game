@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #79616f;
+}
+
+.wrapper {
+    padding: 30px;
+    border-radius: 12px;
+    background: aliceblue;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper header {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.wrapper p {
+    color: #333;
+}
+
+.wrapper .input-field {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.input-field input,
+.input-field button {
+    height: 50px;
+    width: calc(100% / 2 - 20px);
+    outline: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.input-field input {
+    text-align: center;
+    color: #707070;
+    width: 110px;
+    border: 1px solid #aaa;
+}
+
+.input-field input:disabled {
+    cursor: not-allowed;
+}
+
+.input-field button {
+    border: none;
+    background: #79616f;
+    color: aliceblue;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.input-field button:active {
+    transform: scale(0.97);
+}
